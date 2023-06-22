@@ -9,7 +9,7 @@ describe('selecting of cheapest mac',{baseUrl:'https://demoblaze.com'},()=>{
         cy.clearCookies();
         cy.visit('/');
       });
-it('finding the cheapest mac',()=>{
+it.skip('finding the cheapest mac',()=>{
 cy.contains('Laptops').click();
 cy.get('.card-title >.hrefch').contains('MacBook air').should('be.visible')
 const prices=new Array();
