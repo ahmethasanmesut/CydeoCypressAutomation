@@ -9,7 +9,7 @@ describe('How to do API tests with cypress', () => {
       failOnStatusCode: false,
     }).then((response) => {
       expect(response.status).to.equal(200);
-      // cy.log(response.body.books[0].isbn);
+       cy.log(response)
       // verify second book has title: Learning JavaScript Design Patterns
       expect(response.body.books[1].title).to.equal('Learning JavaScript Design Patterns');
       expect(response.headers.connection).to.equal('keep-alive');

@@ -1,0 +1,20 @@
+//Aritmetic
+console.log(3+5*4-6);
+
+//Assignment
+var x=5;
+x+=5;
+console.log(x);
+
+//comparison
+var one=1;
+var one_again=1;
+var one_string='1';
+console.log(one==one_again);
+console.log(one===one_again);
+console.log(one==one_string);//true//same value even types are different
+console.log(one===one_string);//false//types are different
+
+//logical
+console.log((5<2)&&(2>=3));
+console.log(!(5==3));

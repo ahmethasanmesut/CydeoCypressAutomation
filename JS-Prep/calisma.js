@@ -1,0 +1,26 @@
+/*let total = arr => arr.reduce((a,b)=>a*b);
+let arr = [5,10,20,30];
+console.log(total(arr));
+//add starting point as parameter
+let total2 = arr => arr.reduce(((a,b)=>a+b),3);
+console.log(total2(arr));*/
+function myDisplayer(some) {
+  console.log(some);
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+
+// The producing code (this may take some time)
+
+  if (x == 0) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
